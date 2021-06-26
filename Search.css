@@ -1,0 +1,55 @@
+ * {
+     box-sizing: border-box;
+
+ }
+
+body
+{
+    background-image: linear-gradient(90deg,#741818,#db5621);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.search{
+    position: relative;
+    height: 50px;
+    transition: transform 0.3s ease;
+    
+}
+
+.search .input{
+    background-color: lightcoral;
+
+    height: 40px;
+        }
+
+.btn{
+    background-color: greenyellow;
+    transition: transform 0.3s ease;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn:focus
+.input:focus{
+    outline: none;
+}
+
+.search.active .input
+{
+    width: 200px;
+}
+
+.search.active .btn
+{
+    transform: translateX(198px);
+}
+
+.search . input{
+    box-decoration-break: slice;
+}
